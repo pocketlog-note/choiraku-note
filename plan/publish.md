@@ -14,7 +14,7 @@
 
 ## 公開の流れ
 1. GitHub でリポジトリ `choiraku-note` を作る（README・.gitignore は足さない）。
-2. `git remote add origin https://github.com/<ユーザー名>/choiraku-note.git` → `git push -u origin main`（ブランチは先に main へまとめる）。
+2. `git branch -M main`（今のブランチ名 feat/first-article を main に改名）→ `git remote add origin https://github.com/<ユーザー名>/choiraku-note.git` → `git push -u origin main`。
 3. リポジトリの Settings → Pages → Source を「GitHub Actions」にする。
 4. Actions の `build-and-deploy` が緑になったら、公開URLを開いて表示を確認する。
 

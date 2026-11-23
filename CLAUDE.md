@@ -8,7 +8,7 @@
 
 ## 技術スタック
 - Python 3.10（標準ライブラリのみ）。`build.py`: `content/*.md` ＋ `pages/*.md` ＋ `style.css` → `docs/`（git管理外）。公開は GitHub Actions → GitHub Pages（未設定）。
-- `SITE_URL` は仮値（`example.invalid`）。公開先が決まったら build.py の `SITE_URL` と、404 の `/choiraku-note/` を直す。
+- `SITE_URL` は仮値（`example.invalid`）。公開時は Actions が `SITE_URL` を自動設定する（直す必要なし）。手順は plan/publish.md。
 
 ## よく使うコマンド
 - 新しい記事: `python new_post.py <slug> "<タイトル>" [公開日]`
@@ -18,7 +18,7 @@
 ## ルール・注意点
 - 記事を書いたら毎回 yomiyasu スキルで推敲 → check.py → build.py。
 - 動かしていない手順を「確かめた」と書かない。【体験メモ】は本人が書く。
-- 匿名: 本名・個人メールを出さない。git の user はこのリポジトリでは匿名用に別設定する（未設定）。
+- 匿名: 本名・個人メールを出さない。git の user はこのリポジトリのローカル設定で匿名名 `choiraku-note`（noreply）にしてある。
 - アカウント作成・push・公開・ドメイン購入・定期タスク登録は、ユーザーの指示があるときだけ。
 
 ## メモ・決定事項
