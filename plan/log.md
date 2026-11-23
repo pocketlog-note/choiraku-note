@@ -1,5 +1,10 @@
 # 運用ログ（新しいものを上に）
 
+## 2026-11-24（定期実行）
+- 記事005（スクリーンショットの名前を日時つきに一括変更）を中編で作成。PowerShell 5.1 で一時フォルダのダミーファイルを使い、予定表示・改名・スキップ・使用中の失敗・元に戻す操作を確認。BOMなしUTF-8のps1だと日本語パターンが合わない点も記事に記載。yomiyasu 検査済み、check.py エラー0・警告0、公開日 2026-11-25（予約）。
+- 未確認: 実際の Win+PrtScn で撮った画像での動作、PowerShell 7、OneDrive同期フォルダ。
+- topics.txt から該当ネタを削除（残り3本）。
+
 ## 2026-11-23（その5）
 - 公開した: https://pocketlog-note.github.io/choiraku-note/ （GitHub アカウント pocketlog-note、リポジトリ choiraku-note、Pages の Source は GitHub Actions）。最初の Actions 実行は Pages 未設定で失敗したため、設定後に再実行して成功。
 - 定期タスク `choiraku-note-daily` を毎朝8時台に登録（ポケットログは7時台）。Actions も毎朝6時にビルドする。
